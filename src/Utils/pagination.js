@@ -7,16 +7,16 @@ export const Pagination = ({ activePage, count, rowsPerPage, totalPages, setActi
     <>
       <div className="pagination">
         <button disabled={activePage === 1} onClick={() => setActivePage(1)}>
-          ⏮️ First
+          <span>⏮️ First</span>
         </button>
         <button disabled={activePage === 1} onClick={() => setActivePage(activePage - 1)}>
-          ⬅️ Previous
+         <span>⬅️ Previous</span>  
         </button>
         <button disabled={activePage === totalPages} onClick={() => setActivePage(activePage + 1)}>
-          Next ➡️
+          <span>Next ➡️</span>
         </button>
         <button disabled={activePage === totalPages} onClick={() => setActivePage(totalPages)}>
-          Last ⏭️
+          <span>Last ⏭️</span>
         </button>
       </div>
       <p>
