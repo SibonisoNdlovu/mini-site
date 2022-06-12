@@ -24,7 +24,9 @@ th span {
   margin-right: 1rem;
 }
 
-tr {
+tr:hover {
+  background-color: skyblue;
+  transition: 1s;
   cursor: pointer;
 }
 
