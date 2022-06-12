@@ -23,7 +23,7 @@
   "scripts": {
     "dev": "webpack-dev-server",
     "server": "npm run start --prefix server",
-    "client": "PORT=3001 react-scripts start",
+    "client": "PORT=8080 react-scripts start",
     "start": "concurrently \"npm run server\" \"npm run client\"",
     "build": "webpack",
     "test": "react-scripts test",

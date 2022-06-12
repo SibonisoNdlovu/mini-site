@@ -127,14 +127,14 @@ export const Table = ({ columns, rows }) => {
 
       <div>
         <p>
-          <Button text={"Clear filters"} onClick={clearAll}></Button>
+          <Button text={"RESET"} onClick={clearAll}></Button>
         </p>
       </div>
       <div>
         {selectedUser? 
         (<Card data={selectedUser}/>)
          : <div>
-          Select User
+          
         </div> }
       </div>
     </>
