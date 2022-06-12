@@ -25,8 +25,8 @@ export default function App() {
       .then((res) => setRows(res));
   }, []);
   return (
-    <div className="App">
-      {rows.length>0 ? (<Table columns={columns}  rows={rows}/>): (<div class="loader4"></div>)}
-    </div>
+    <section className="App">
+      {rows.length>0 ? (<Table columns={columns}  rows={rows}/>): (<section class="loader4"></section>)}
+    </section>
   )
 }

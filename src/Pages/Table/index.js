@@ -125,18 +125,18 @@ export const Table = ({ columns, rows }) => {
         <p>No data found</p>
       )}
 
-      <div>
+      <section>
         <p>
           <Button text={"RESET"} onClick={clearAll}></Button>
         </p>
-      </div>
-      <div>
+      </section>
+      <section>
         {selectedUser? 
         (<Card data={selectedUser}/>)
-         : <div>
+         : <section>
           
-        </div> }
-      </div>
+        </section> }
+      </section>
     </>
   )
 }
