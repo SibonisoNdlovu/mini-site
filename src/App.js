@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React  from 'react';
 
-function App() {
+import { useState, useEffect } from 'react'
+import './styles.css'
+
+import { Table } from './Pages/Table/index'
+
+export default function App() {
+  const [rows, setRows] = useState({})
+
+  const columns = [
+    { accessor: 'first_name', label: 'First Name' },
+    { accessor: 'last_name', label: 'Last Name' },
+    { accessor: 'date_of_birth', label: 'Date Of Birth'},
+    { accessor: 'email_address', label: 'Email Address' },    
+    { accessor: 'address', label: 'Address' },
+    { accessor: 'city', label: 'City' },
+    { accessor: 'country', label: 'Country'},
+    { accessor: 'zip_code', label: 'Zip Code' },
+  ]
+
+  useEffect(() => {
+    fetch("http://localhost:3000/users")
+      .then((res) => res.json())
+      .then((res) => setRows(res));
+  }, []);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {rows.length>0 ? (<Table columns={columns}  rows={rows}/>): (<div class="loader4"></div>)}
     </div>
-  );
+  )
 }
-
-export default App;
