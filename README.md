@@ -26,3 +26,14 @@ Please be advised that this application uses concurrently and so you will need t
 `npm run start`
 
 Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
+
+
+<img width="1440" alt="Screenshot 2022-06-12 at 23 27 10" src="https://user-images.githubusercontent.com/43060555/173254457-62be3af3-cb9b-4400-8bc7-689c80cacc67.png">
+
+<img width="1440" alt="Screenshot 2022-06-12 at 23 27 29" src="https://user-images.githubusercontent.com/43060555/173254462-9d6210c3-a3c5-4067-b199-ccb8917a21c4.png">
+
+<img width="1440" alt="Screenshot 2022-06-12 at 23 27 56" src="https://user-images.githubusercontent.com/43060555/173254464-efd1ce5f-b1bb-4877-b00c-b9c67c0901c1.png">
+
+<img width="1440" alt="Screenshot 2022-06-12 at 23 28 19" src="https://user-images.githubusercontent.com/43060555/173254465-21ef3ae0-7f12-4ee2-946a-5a5438e75739.png">
+
+<img width="1440" alt="Screenshot 2022-06-12 at 23 28 50" src="https://user-images.githubusercontent.com/43060555/173254467-e1ab4b0b-a4ec-4b56-8ed2-5de9d73550c0.png">
