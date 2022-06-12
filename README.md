@@ -44,4 +44,6 @@ Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
 
 <img width="500" alt="Screenshot 2022-06-12 at 23 32 15" src="https://user-images.githubusercontent.com/43060555/173254555-4d0457aa-a149-4e62-8abc-802b43f74304.png">
 
+<img width="1440" alt="Screenshot 2022-06-12 at 23 31 54" src="https://user-images.githubusercontent.com/43060555/173254932-5938994f-b019-49b1-a5b2-4867c2fb393d.png">
+
 
