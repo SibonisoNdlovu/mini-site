@@ -1,4 +1,5 @@
 import React  from 'react';
+import axios from 'axios';
 
 import { useState, useEffect } from 'react'
 import './styles.css'
@@ -20,9 +21,8 @@ export default function App() {
   ]
 
   useEffect(() => {
-    fetch("http://localhost:3000/users")
-      .then((res) => res.json())
-      .then((res) => setRows(res));
+    axios.get("/getUsers")
+      .then((res) => setRows(res.data.data))
   }, []);
   return (
     <section className="App">
