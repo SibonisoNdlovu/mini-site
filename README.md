@@ -13,10 +13,10 @@ Frontend - 8080
 
 # Installing Dependencies
 
-Open DOS Folder and run the following command:
+Run the following command:
 
 Frontend - `npm install`
-Backend -  `cd server && npm install`
+Backend(server) -  `cd server && npm install`
 
 
 # Running the application
