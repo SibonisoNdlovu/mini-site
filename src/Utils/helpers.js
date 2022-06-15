@@ -1,5 +1,6 @@
 /* eslint-disable eqeqeq */
 
+// these are helper methods
 export function isEmpty(obj = {}) {
   return Object.keys(obj).length === 0
 }
@@ -53,6 +54,7 @@ export function convertType(value) {
   return value
 }
 
+// filter rows based on the filters
 export function filterRows(rows, filters) {
   if (isEmpty(filters)) return rows
 
@@ -78,6 +80,7 @@ export function filterRows(rows, filters) {
   })
 }
 
+// sort rows based on the sort
 export function sortRows(rows, sort) {
   return rows.sort((a, b) => {
     const { order, orderBy } = sort
@@ -96,6 +99,7 @@ export function sortRows(rows, sort) {
   })
 }
 
+// paginate rows based on the active page and rows per page
 export function paginateRows(sortedRows, activePage, rowsPerPage) {
   return [...sortedRows].slice((activePage - 1) * rowsPerPage, activePage * rowsPerPage)
 }

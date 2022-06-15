@@ -20,8 +20,9 @@ export default function App() {
     { accessor: 'zip_code', label: 'Zip Code' },
   ]
 
+  // fetch the data from the API
   useEffect(() => {
-    axios.get("/getUsers")
+    axios.get(`*`)
       .then((res) => setRows(res.data.data))
   }, []);
   return (

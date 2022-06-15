@@ -1,5 +1,6 @@
 import React  from 'react';
 
+// card component used to display each row of the table
 export const Card = ({ data }) => {
   return (
     <section>

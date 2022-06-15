@@ -1,10 +1,11 @@
 import React  from 'react';
 import { useState, useMemo } from 'react'
 import { sortRows, filterRows, paginateRows } from '../../Utils/helpers'
-import { Pagination } from '../../Utils/pagination'
+import { Pagination } from '../../Components/Pagination/pagination'
 import { Button } from '../../Components/Button'
 import { Card } from '../../Components/Card'
 
+//Table component, used to display the data
 export const Table = ({ columns, rows }) => {
   const [activePage, setActivePage] = useState(1)
   const [selectedUser, setSelectedUser] = useState()
@@ -19,6 +20,7 @@ export const Table = ({ columns, rows }) => {
   const count = filteredRows.length
   const totalPages = Math.ceil(count / rowsPerPage)
 
+  // function to handle the search input
   const handleSearch = (value, accessor) => {
     setActivePage(1)
 
@@ -37,6 +39,7 @@ export const Table = ({ columns, rows }) => {
     }
   }
 
+  // function to handle the sort input
   const handleSort = (accessor) => {
     setActivePage(1)
     setSort((prevSort) => ({
@@ -45,6 +48,7 @@ export const Table = ({ columns, rows }) => {
     }))
   }
 
+  // function to clear/reset the filters and selected user
   const clearAll = () => {
     setSort({ order: 'asc', orderBy: 'id' })
     setActivePage(1)
@@ -52,6 +56,7 @@ export const Table = ({ columns, rows }) => {
     setFilters({})
   }
 
+  // function to select a user
   const handleClickUser = (e, row) => {
     e.preventDefault();
     setSelectedUser(row);
