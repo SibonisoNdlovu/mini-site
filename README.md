@@ -13,10 +13,10 @@ Frontend - 8080
 
 # Installing Dependencies
 
-Open DOS Folder and run the following command:
+Run the following command:
 
 Frontend - `npm install`
-Backend -  `cd server && npm install`
+Backend(server) -  `cd server && npm install`
 
 
 # Running the application
@@ -32,7 +32,7 @@ Open [http://localhost:8080](http://localhost:8080) to view it in your browser.
 
 # Webpack 
 
-`npm run dev` 
+`npm run start` 
 
 <img width="500" alt="Screenshot 2022-06-12 at 23 27 10" src="https://user-images.githubusercontent.com/43060555/173254457-62be3af3-cb9b-4400-8bc7-689c80cacc67.png">
 
