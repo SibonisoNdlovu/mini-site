@@ -2,7 +2,7 @@ import React  from 'react';
 import axios from 'axios';
 
 import { useState, useEffect } from 'react'
-import './styles.css'
+import './styles.scss'
 
 import { Table } from './Pages/Table/index'
 
@@ -22,12 +22,12 @@ export default function App() {
 
   // fetch the data from the API
   useEffect(() => {
-    axios.get(`*`)
+    axios.get(`http://localhost:3001/*`)
       .then((res) => setRows(res.data.data))
   }, []);
   return (
     <section className="App">
-      {rows.length>0 ? (<Table columns={columns}  rows={rows}/>): (<section class="loader4"></section>)}
+      {rows.length>0 ? (<Table columns={columns}  rows={rows}/>): (<section className="loader4"></section>)}
     </section>
   )
 }
